@@ -37,6 +37,7 @@ export default function Quiz01({}: Props) {
     <form>
       <label htmlFor="star">Number of Star : </label>
       <input
+      className="border border-black"
         id="star"
         name="star"
         type="number"
