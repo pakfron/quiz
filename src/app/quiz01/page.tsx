@@ -18,7 +18,6 @@ export default function Quiz01({}: Props) {
       for (let i:number = 1; i <= starNumber; i++) {
         star += "*";
         arr.push(star);
-        console.log(star);
       }
       setStarPattern(arr);
     }
