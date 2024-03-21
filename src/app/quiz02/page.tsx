@@ -34,49 +34,58 @@ export default function Quiz02({}: Props) {
   const handleGo = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
     if (one !== "") {
-      const calTwo: string = String((one * 7) / 100);
+      const oneNum:number = Number(one)
+      const calTwo: string = String((oneNum * 7) / 100);
       setTwo(calTwo);
-      const calThree: string = String(one * 1.07);
+      const calThree: string = String(oneNum * 1.07);
       setThree(calThree);
-      const calFour: string = String((one * 3) / 100);
+      const calFour: string = String((oneNum * 3) / 100);
       setFour(calFour);
-      const calFive: string = String(one * 1.04);
+      const calFive: string = String(oneNum * 1.04);
       setFive(calFive);
     } else if (two !== "") {
-      const callOne: string = String((two * 100) / 7);
+      const twoNum:number = Number(two)
+      const callOne: string = String((twoNum * 100) / 7);
       setOne(callOne);
-      const calThree: string = String(callOne * 1.07);
+      const oneNum:number = Number(callOne)
+      const calThree: string = String(oneNum * 1.07);
       setThree(calThree);
-      const calFour: string = String((callOne * 3) / 100);
+      const calFour: string = String((oneNum * 3) / 100);
       setFour(calFour);
-      const calFive: string = String(callOne * 1.04);
+      const calFive: string = String(oneNum * 1.04);
       setFive(calFive);
     } else if (three !== "") {
-      const callOne: string = String((three * 100) / 107);
+      const threeNum:number = Number(three)
+      const callOne: string = String((threeNum * 100) / 107);
       setOne(callOne);
-      const calTwo: string = String((callOne * 7) / 100);
+      const oneNum:number = Number(callOne)
+      const calTwo: string = String((oneNum * 7) / 100);
       setTwo(calTwo);
-      const calFour: string = String((callOne * 3) / 100);
+      const calFour: string = String((oneNum * 3) / 100);
       setFour(calFour);
-      const calFive: string = String(callOne * 1.04);
+      const calFive: string = String(oneNum * 1.04);
       setFive(calFive);
     } else if (four !== "") {
-      const callOne: string = String((four * 100) / 3);
+      const fourNum :number = Number(four)
+      const callOne: string = String((fourNum * 100) / 3);
       setOne(callOne);
-      const calTwo: string = String((callOne * 7) / 100);
+      const oneNum:number = Number(callOne)
+      const calTwo: string = String((oneNum * 7) / 100);
       setTwo(calTwo);
-      const calThree: string = String(callOne * 1.07);
+      const calThree: string = String(oneNum * 1.07);
       setThree(calThree);
-      const calFive: string = String(callOne * 1.04);
+      const calFive: string = String(oneNum * 1.04);
       setFive(calFive);
     } else if (five!==""){
-        const callOne: string = String((five * 100) / 104);
+      const fiveNum:number = Number(five)
+        const callOne: string = String((fiveNum * 100) / 104);
         setOne(callOne);
-        const calTwo: string = String((callOne * 7) / 100);
+        const oneNum:number = Number(callOne)
+        const calTwo: string = String((oneNum * 7) / 100);
       setTwo(calTwo);
-        const calThree: string = String(callOne * 1.07);
+        const calThree: string = String(oneNum * 1.07);
         setThree(calThree);
-        const calFour: string = String((callOne * 3) / 100);
+        const calFour: string = String((oneNum * 3) / 100);
         setFour(calFour);
         
     }

@@ -10,7 +10,7 @@ ChartJS.register(
     Legend
 )
 
-export default function ChartPie({data}) {
+export default function ChartPie({data}:any) {
     const options = {
         scales:{
             y:{

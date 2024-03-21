@@ -45,7 +45,7 @@ export default function Quiz01({}: Props) {
         min={'0'}
         onChange={handleOnchange}
       ></input>
-      <button onClick={handleSubmit}>Go</button>
+      <button className="bg-blue-500 text-white font-bold  ml-1 border w-10 rounded-md" onClick={handleSubmit}>Go</button>
       <div>
         {starPattern &&
           starPattern.map((el, index) => <div key={index}>{el}</div>)}
